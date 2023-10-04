@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1>Welcome to phone Hunter</h1>
+    <main>
+        <section>
+            <div class="mb-3 w-50">
+                <input id="search-field"  type="email"  class="form-control"  placeholder="search phone">
+               
+                <div id="search-button" class="btn btn-dark">search</div>
+
+              </div>
+        </section>
+        <section>
+
+            <div id="phonecontainer" class="row row-cols-1 row-cols-md-3 g-4">
+           
+                <!-- id="exampleFormControlInput1"  -->
+        </section>
+        
+
+        
+        
+        <div class="mt-4 "  >
+            <h3 id="phonenotfound" class="text-warning">  Sorry! no phone found try a valid search </h3>
+
+
+        </div>
+        <div id="showall" class="text-center d-none">
+            <div id="button-show-all" class="btn btn-danger"> Show All</div>
+        </div>
+        <section id="spninnerloader" class="d-none">
+            <div style="height: 300px;" class="d-flex  justify-content-center align-items-center">
+                <div class="spinner-border text-danger" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+        </section>
+
+        <section>
+            <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="phonemodal" tabindex="-1" aria-labelledby="phonemodalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="phonemodalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="phone-details" class="modal-body">
+            
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+        </section>
+    </main>
+    
+
+    <script src="phone.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
